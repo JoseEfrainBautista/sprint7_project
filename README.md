@@ -1,2 +1,2 @@
 # sprint7_project
-Aplicación web que sirve para ver el análisis de datos exploratorio de carros; de acuerdo a su odometer, precio y número de carros ofertados por década.
+Un script en Python para analizar y visualizar datos de ofertas de automóviles usando Pandas, Plotly express y Streamlit.
