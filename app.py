@@ -6,7 +6,7 @@ import pandas as pd
 # Tratamos de leer los datos del dataset, controlando si el archivo existe
 RUTA = 'vehicles_us.csv'
 try:
-    df_car_data = pd.read_csv(ruta)
+    df_car_data = pd.read_csv(RUTA)
 except FileNotFoundError:
     print("El archivo vehicle_data.csv no se encuentra en el directorio actual.")
 else:
