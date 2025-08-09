@@ -27,7 +27,7 @@ build_histogram = st.checkbox('Construir histograma')
 # Funcionalidad del checkbox para crear un histograma
 if build_histogram:
     # Escribir un mensaje
-    st.write('Construir un histograma por odómetro de los carros')
+    st.write('Construir un histograma por odómetro')
     # Crear el histograma
     fig = px.histogram(df_car_data, x='odometer')
     # Mostrar un gráfico Plotly interactivo
@@ -40,9 +40,7 @@ build_dispersion = st.checkbox(
 # Funcionalidad del checkbox para crear un gráfico de dispersión
 if build_dispersion:
     # Escribir un mensaje
-    st.write('''
-             Construir gráfico de dispersión para el conjunto de datos de anuncios de venta de coches
-             ''')
+    st.write('Construir gráfico de dispersión por odómetro y precio')
     # Crear el gráfico de dispersión
     fig = px.scatter(df_car_data, x='odometer', y='price')
     # Mostrar un gráfico Plotly interactivo
@@ -54,7 +52,7 @@ build_bar = st.checkbox('Construir gráfico de barras')
 # Funcionalidad del checkbox para crear un gráfico de barras
 if build_bar:
     # Escribir un mensaje
-    st.write('''Construir gráfico de barras de los carros en venta por decada''')
+    st.write('Construir gráfico de barras de los carros en venta por decada')
     # Carros por decada
     df_car_data['decade'] = (df_car_data['model_year'] // 10) * 10
     decade_counts = df_car_data['decade'].value_counts().sort_index()
