@@ -35,7 +35,7 @@ if build_histogram:
 
 # Crear botón para construir un gráfico de dispersión
 build_dispersion = st.checkbox(
-    'Construir gráfico de dispersión de odómetro y precio')
+    'Construir gráfico de dispersión')
 
 # Funcionalidad del checkbox para crear un gráfico de dispersión
 if build_dispersion:
